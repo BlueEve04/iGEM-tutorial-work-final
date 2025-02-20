@@ -1,0 +1,123 @@
+body{
+    background-color: rgba(44, 152, 179, 0.301);
+}
+#body {
+    transition: background-color 1s ease;  
+}
+.cont{
+    flex: 0.3;
+    left: 100px;
+    top: 200px;
+    z-index: 1; 
+}
+.shell{
+    height: 600px;
+    width: auto;
+    position: absolute;
+    z-index: 1; 
+}
+.inside{
+    height: 600px;
+    width: auto;
+    position: absolute;
+    transition: all 0s ease-in-out;
+    z-index: 1; 
+}
+.tit{
+    display: flex;
+    width: 100%;
+    position:relative;
+    top: -100px;
+    left: 100px;
+    align-items: center;
+    z-index: 1; /* 确保标题层级低于导航栏 */
+}
+.tit_txt{
+    flex: 0.4;
+    position: relative;
+    left: 90px;
+    top: 200px;
+    z-index: 1; 
+}
+h1{
+    color: rgb(0, 28, 105);
+}
+.ept{
+    position: relative;
+    top: 4000px;
+    z-index: 1; 
+}
+.txt2{
+    color: rgb(10, 119, 173);
+    position: relative;
+    top: 940px;
+    left: 600px;
+    transition: all 0.8s ease-in-out;
+    z-index: 1; 
+}
+h3{
+    font-size: 60px;
+}
+.myshow{
+    position: absolute;
+    top: 1500px;
+    left: 100px;
+    margin: 100px;
+    align-items: center;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    font-size: 50px;
+    z-index: 1; 
+}
+.contact-info {
+    position: absolute;
+    margin: 70px;
+    border-radius: 30px;
+    background-color: rgb(91, 122, 112);
+    top: 2400px;
+    left: 100px;
+    font-size: 20px;
+    color: #90c6ce;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-info:hover{
+    background-color: #7fa1a0;
+}
+.contact-info:hover ~ #body {
+    background-color: rgb(28, 49, 12);
+}
+
+.contact-info:hover a, .contact-info:hover p {
+    color: rgb(20, 47, 71);
+    transition: color 0.5s ease-in-out;
+}
+.contact-info p{
+    margin:70px;
+    transition: color 0.5s ease-in-out;
+    font-size: 30px;
+}
+.contact-info a {
+    color: #90c6ce;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+.contact-info a:hover {
+    color: #60f986;
+}
+.contact-info.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.copyright{
+    position: absolute;
+    top: 2800px;
+    margin: 120px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1; 
+}
+h4{
+    font-size: 60px!important;
+    color: rgb(30, 73, 180);
+}

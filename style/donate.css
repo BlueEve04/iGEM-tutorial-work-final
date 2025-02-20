@@ -1,0 +1,15 @@
+.money{
+    position: relative;
+    margin-left: 100px;
+    padding-left: 100px;
+    width: 640px;
+    flex:0.4;
+}
+.donate{
+    padding-top:100px;
+    display: flex;
+}
+.dt{
+    flex: 0.6;
+    margin: 100px;
+}
